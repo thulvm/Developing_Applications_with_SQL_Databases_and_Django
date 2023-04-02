@@ -6,7 +6,8 @@ from django.template import loader
 
 def exam_result(request):
   template = loader.get_template('exam_result_bootstrap.html')
-  return HttpResponse(template.render())
+  return render(request, 'exam_result_bootstrap.html')
 def course_detail(request):
   template = loader.get_template('course_detail_bootstrap.html')
   return HttpResponse(template.render())
+  return HttpResponse('course_detail_bootstrap.html')
