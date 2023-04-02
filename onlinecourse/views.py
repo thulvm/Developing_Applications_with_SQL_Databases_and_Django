@@ -5,9 +5,9 @@ from django.http import HttpResponse
 from django.template import loader
 
 def exam_result(request):
-  template = loader.get_template('exam_result_bootstrap.html')
-  return render(request, 'exam_result_bootstrap.html')
+  template = loader.get_template('onlinecourse\exam_result_bootstrap.html')
+  return render(request, 'onlinecourse\exam_result_bootstrap.html')
 def course_detail(request):
-  template = loader.get_template('course_detail_bootstrap.html')
+  template = loader.get_template('onlinecourse\course_detail_bootstrap.html')
   return HttpResponse(template.render())
   return HttpResponse('course_detail_bootstrap.html')
